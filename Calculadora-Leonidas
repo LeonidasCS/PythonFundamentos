@@ -1,0 +1,62 @@
+#projeto de calculadora Leônidas Cosmo Setti- aluno Data Sciency Academy
+def con():
+    print("\ntecle <enter>para continuar ")
+    input(" ") 
+    return 
+
+fa=[]
+def  main():
+    op=9
+    while op !=0:
+        print("")
+        print("   !---* * *  Calculadora em PYTHON ----!")
+        print("   !                                    !")
+        print("   !   1) Soma                          !")
+        print("   !   2) Subtração                     !")
+        print("   !   3) Multiplicação                 !")
+        print("   !   4) Divisão                       !")
+        print("   !   5) potencia                      !")
+        print("   !   0) Sair - terminar programa      !")
+        print("   !                                    !")
+        print("   +------------------------------------!")
+        fa = [1,2,3,4,5,0]
+        print("       Opções(1,2,3,4,5,0) :")
+        op=int(input(""))
+        if op != 0:
+            menu={1:'soma',2:'subtração',3:'Multiplicação',4:'Divisão', 5:'Potência'}
+            item=menu[op]
+            print("\n oparação de ",item,"\n")           
+            x = int(input("1o elemento: "))
+            y = int(input("2o elemento: "))  
+
+        if  op in fa:
+            if op == 1:
+        
+                print("\n")
+                print("A soma de %s com %r é:  " %(x,y),x+y) 
+                con()   
+            if op == 2:   
+
+                print("\n")
+                print("A diferença de %s com %r e:  " %(x,y),x-y)
+                con() 
+            if op == 3:   
+
+                print("\n")
+                print("o produto de %s com %r é:  " %(x,y),x*y) 
+                con()
+            if op == 4:   
+
+                print("\n")
+                print("A Divisão de %s por %r é:  " %(x,y),x/y) 
+                con() 
+            if op == 5:   
+                print("\n")
+                print("O número %s elevado a %r é:  " %(x,y),x**y) 
+                con()
+            if op == 0:  
+                print(" fim de programa ... obrigado por testar   ....")  
+                break          
+        con()
+    
+main()    
